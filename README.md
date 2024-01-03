@@ -21,8 +21,8 @@ yarn build
 
 # TK Strapi
 + super: `trantronghienftel@gmai.com` pass: `@Bc123456789`
-+ user Authenticated: `trantronghien` and `@Bc123456789`
-+ user public: `trantronghien1` and `@Bc123456789`
++ user Authenticated: `trantronghien` and `@Bc123456789`, email: `trantronghien@gmail.com`
++ user public: `trantronghien1` and `@Bc123456789` , email: `trantronghien1@gmail.com`
 
 + test token api: 
 ```
