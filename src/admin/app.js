@@ -23,7 +23,7 @@ const config = {
     // 'th',
     // 'tr',
     // 'uk',
-    // 'vi',
+    'vi',
     // 'zh-Hans',
     // 'zh',
   ],
@@ -37,3 +37,5 @@ export default {
   config,
   bootstrap,
 };
+
+
