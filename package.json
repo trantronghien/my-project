@@ -9,8 +9,9 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
+    "@ckeditor/ckeditor5-markdown-gfm": "^40.2.0",
     "@strapi/plugin-cloud": "4.16.2",
     "@strapi/plugin-i18n": "4.16.2",
     "@strapi/plugin-users-permissions": "4.16.2",
