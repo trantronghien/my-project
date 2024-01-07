@@ -1,8 +1,10 @@
+const productPrefix = '/product';
+
 module.exports = {
     routes: [
         {
             method: 'GET',
-            path: '/sort_product_v2',
+            path: `${productPrefix}/sort_product_v2`,
             handler: 'product.sortProductV2',
             config: {
                 auth: false,

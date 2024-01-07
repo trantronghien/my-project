@@ -2,9 +2,9 @@
 import favicon from "./extensions/image/favicon.ico";
 // import MyNewWYSIGWYG from "./extensions/components/MyNewWYSIGWYG";
 // @ts-ignore
-import vi from "./extensions/translations/vi.json";
+import vi from "./extensions/translations/vi";
 // @ts-ignore
-import en from "./extensions/translations/en.json";
+import en from "./extensions/translations/en";
 // @ts-ignore
 import ckeditor5Dll from "ckeditor5/build/ckeditor5-dll.js";
 // @ts-ignore

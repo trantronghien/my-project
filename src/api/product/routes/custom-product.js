@@ -1,12 +1,16 @@
+const productPrefix = '/product';
+
 module.exports = {
+    // prefix: 'productv1',
     routes: [
         // api/sort_product_v1
         {
             method: 'GET',
-            path: '/sort_product_v1',
+            path: `${productPrefix}/sort_product_v1`,
             handler: 'product.sortProductV1',
             config: {
                 auth: false,
+                middlewares: ["api::product.product-middlewares"],
                 // policies: [
                 //     // point to a registered policy
                 // found at ./src/policies/policy-name.js.
