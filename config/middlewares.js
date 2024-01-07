@@ -21,4 +21,11 @@ module.exports = [
       data: 'data_by_middleware_confirg',
     },
   },
+
+  {
+    name: 'global::api-response-middleware',
+    // config: {
+    //   data: 'data_by_middleware_confirg',
+    // },
+  },
 ];
