@@ -23,5 +23,14 @@ module.exports = createCoreController('api::product.product',({ strapi }) => ({
         } catch (error) {
             ctx.body = error;
         }
+    },
+    async sendMail() {
+        // await strapi.plugin('email').service('email').send({
+        //     to: 'someone@example.com',
+        //     from: 'someone2@example.com',
+        //     subject: 'Hello world',
+        //     text: 'Hello world',
+        //     html: `<h4>Hello world</h4>`,
+        //   });
     }
 }));
