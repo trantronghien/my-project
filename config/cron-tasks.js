@@ -3,7 +3,7 @@ module.exports = {
     //    */n: Thực hiện mỗi n đơn vị thời gian.
     //    n: Các giá trị cụ thể.
     //    0 0 * * *: Chạy một lần mỗi ngày vào lúc 00:00.
-    //    \*/15 * * * *: Chạy mỗi 15 phút.
+    //    */15 * * * *: Chạy mỗi 15 phút.
     //    0 0 * * MON: Chạy một lần mỗi thứ Hai vào lúc 00:00.
     //    0 0 1 * *: Chạy một lần vào ngày đầu tiên của mỗi tháng vào lúc 00:0
     /**
@@ -34,14 +34,14 @@ module.exports = {
     },
 
     /// mỗi 10 giây
-    once10Seconds: {
-        task: ({ strapi }) => {
-            console.log('run once10Seconds: ' + Date.now().toString());
-        },
-        options: {
-            rule: "*/10 * * * * *",
-            tz: "Asia/Ho_Chi_Minh",
-        },
-    }
+    // once10Seconds: {
+    //     task: ({ strapi }) => {
+    //         console.log('run once10Seconds: ' + Date.now().toString());
+    //     },
+    //     options: {
+    //         rule: "*/10 * * * * *",
+    //         tz: "Asia/Ho_Chi_Minh",
+    //     },
+    // }
     
 };
