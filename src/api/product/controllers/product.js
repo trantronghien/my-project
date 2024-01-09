@@ -7,6 +7,11 @@
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::product.product',({ strapi }) => ({
+    async search(ctx) {
+        const { q } = ctx.query
+        const products = await strapi.service('api::product.product').search(q.toString().trim());
+        ctx.body = { data: products}
+    },
     async sortProductV1(ctx) {
         try {
             ctx.body = { tilte: 'sort Product V1'}

@@ -3,6 +3,15 @@ const productPrefix = '/products';
 module.exports = {
     // prefix: 'productv1',
     routes: [
+        {
+            method: 'GET',
+            path: `${productPrefix}/search`,
+            handler: 'product.search',
+            config: {
+                auth: false, // để tùy chọn trên admin
+            }
+        },
+
         // api/sort_product_v1
         {
             method: 'GET',
