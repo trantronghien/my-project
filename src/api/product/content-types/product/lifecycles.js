@@ -3,12 +3,13 @@ module.exports = {
         const { data, where, select, populate } = event.params;
 
         // let's do a 20% discount everytime
+        console.log('product beforeCreate');
         event.params.data.price = event.params.data.price * 0.8;
     },
 
     afterCreate(event) {
         const { result, params } = event;
-            
+        console.log('product afterCreate');
         // do something to the result;
     },
 };

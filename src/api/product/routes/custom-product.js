@@ -1,4 +1,4 @@
-const productPrefix = '/product';
+const productPrefix = '/products';
 
 module.exports = {
     // prefix: 'productv1',
@@ -9,7 +9,7 @@ module.exports = {
             path: `${productPrefix}/sort_product_v1`,
             handler: 'product.sortProductV1',
             config: {
-                auth: false,
+                // auth: false, // để tùy chọn trên admin
                 middlewares: ["api::product.product-middlewares"],
                 // policies: [
                 //     // point to a registered policy

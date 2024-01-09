@@ -7,7 +7,7 @@ module.exports = {
             path: `${productPrefix}/sort_product_v2`,
             handler: 'product.sortProductV2',
             config: {
-                auth: false,
+                // auth: false, // để tùy chọn trên admin
                 // policies: [
                 //     // point to a registered policy
                 // found at ./src/policies/policy-name.js.
