@@ -164,10 +164,10 @@ module.exports = ({ env }) => ({
       providerOptions: {
         host: env('SMTP_HOST', 'smtp.gmail.com'),
         port: env('SMTP_PORT', 465),
-        secure: env('SMTP_SECURE', false),
+        secure: env('SMTP_SECURE', true),
         auth: {
           user: env('GMAIL_USER'),
-          pass: env('GMAIL_PASSWORD'),
+          pass: env('GMAIL_PASS'),
         },
         // ... any custom nodemailer options
       },
